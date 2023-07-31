@@ -1,0 +1,77 @@
+body{
+  background-color: bisque;
+}
+form{
+    width: 400px ;
+    height: 400px;
+    background: red;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius:20px 20px;
+    text-align: center;
+    animation-name: form;
+    animation-duration:4s;
+    animation-delay: 2s;
+  
+}
+video{
+    height: 600px;
+    width: 300px;
+}
+input{
+  border-radius: 20px 20px;
+  text-align: center;
+  outline: none;
+  border:none;
+}
+/* form .row .col .video{
+    width: 400px;
+    height: 400px;
+} */
+.button {
+    border: none;
+    display: block;
+    text-align:center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color:#eeeeee;
+    font-weight: 600;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(255, 157, 0);
+    /* padding: -30px 50px; */
+    margin: 10px auto;
+    border-radius: 20px 20px;
+  }
+  .button span {
+    position: relative;
+    z-index: 1;
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 470%;
+    width: 140%;
+    background: green;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+  }
+  .button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+  @keyframes form {
+    0%   {background-color:red; left:0px; top:0px; color: green;}
+    25%  {background-color:yellow; left:200px; top:0px;color: blue}
+    50%  {background-color:blue; left:200px; top:200px;color: red;}
+    75%  {background-color:green; left:0px; top:200px;color: yellow;}
+    100% {background-color:red; left:0px; top:0px;color: pink;}
+}
+ 
